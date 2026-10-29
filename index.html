@@ -35,8 +35,8 @@ a{color:inherit;text-decoration:none}
 /* الشريط العلوي */
 nav{position:sticky;top:0;z-index:10;background:rgba(4,5,26,.75);backdrop-filter:blur(10px);border-bottom:1px solid #12154099}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.1rem}
-.logo i{width:16px;height:16px;background:var(--ind);transform:rotate(45deg);border-radius:4px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.1rem;white-space:nowrap}
+.logo-mark{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.12);box-shadow:0 10px 24px rgba(91,91,240,.35);background:linear-gradient(135deg,#f0b95f,#b95a28)}
 .links{display:flex;gap:22px;font-size:.9rem;color:var(--mut)}
 .links a:hover{color:#fff}
 @media(max-width:700px){.links{display:none}}
@@ -408,7 +408,10 @@ footer a:hover{color:#f0b95f}
 </div>
 
 <nav><div class="wrap">
-  <a class="logo" href="#"><i></i>بهار الحاتي</a>
+  <a class="logo" href="#">
+    <img class="logo-mark" src="assets/bahar-logo.png" alt="شعار بهار الحاتي">
+    <span>بهار الحاتي</span>
+  </a>
   <div class="links"><a href="#how">طريقة الطلب</a><a href="#menu">المنيو</a><a href="#about">عن المحل</a><a href="#contact">اتصل بنا</a></div>
   <a class="btn p s" href="#menu">اطلب الآن</a>
 </div></nav>
